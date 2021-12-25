@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fredoka+One&family=Philosopher:wght@400;700&family=Ubuntu:wght@300;400;500&display=swap');
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Ubuntu', sans-serif;
+}
+a{
+	text-decoration: none !important;
+}
+body{
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./Assets/banner2.jpg)center/cover no-repeat;
+}
+.form_panel{
+	width: 100%;
+	height: 65vh;
+}
+.form_panel{
+	background: rgba(0,0,0,0.8);
+	padding: 3rem;
+}
+.form-control{
+	color: red;
+	border: none !important;
+	outline: none !important;
+	background-color: #333333 !important;
+}
+.form-control:focus {
+  color: red;
+  border-bottom: 3px solid #e87033 !important;
+  background-color: #333333 !important;
+  border-color: none !important;
+  outline: 10 !important;
+  box-shadow: none !important;
+  transition: all 0.3s;
+}
+.search_form .form-control::placeholder{
+	color: #f23023 !important;
+}
+.form-floating label{
+	color: #8c8c8c !important;
+}
+.input-group .submit{
+	color: #fff !important;
+	font-size: 1.4rem;
+	background: red !important;
+	border-bottom: transparent !important;
+	filter: drop-shadow(0.1rem 0.1rem 0.1rem red);
+}
+
+@media screen and (max-width: 375px) {
+    .form_panel{
+		background: rgba(0,0,0,0.8);
+		padding: 0rem;
+		display: inline-block;
+		height: auto;
+	}
+	.form-title{
+		margin-top: 5vh;
+	}
+	.form_box{
+		padding: 0.4rem;
+	}
+	.facebook_icon h5,p{
+		font-size: 0.9rem;
+	}
+	.facebook_icon .rap_form{
+		font-size: 0.8rem !important;
+	}
+}
+@media screen and (max-width: 320px) {
+	.form_panel{
+		background: rgba(0,0,0,0.8);
+		padding: 0rem;
+		display: inline-block;
+		height: auto;
+	}
+	.form-title{
+		margin-top: 5vh;
+	}
+	.form_box{
+		padding: 0.4rem;
+	}
+	.facebook_icon h5,p{
+		font-size: 0.65rem;
+	}
+	.facebook_icon .rap_form{
+		font-size: 0.75rem !important;
+	}	
+	.form-check .remem-label{
+		font-size: 0.75rem !important;
+	}
+}
+

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KFLIX PK | Website</title>
+		<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="description" content="Kflix website provide opertunity to viewers see online free movies.">
+    <meta name="description" content="Kflix pk daramas, movies, Tv Shows etc">
+    <meta name="keywords" content="KFLXI, Netflix, Netflixpk, Kflixpk, Onlinemovies">
+    <meta name="keywords" content="pakistani darama, pakistani movies">
+    <meta name="author" content="Muhammad Ahmed">
+    <meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./Assets/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./Assets/favicon/safari-pinned-tab.svg" color="#5bbad5">	
+    <!-- Custome-Stylesheet.css -->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<!-- Splide JS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+	<!-- Link Swiper's CSS -->
+  	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+
+
+	<main class="mian_diplay">
+		<div class="container">
+			<header class="header">
+				<nav class="navbar">
+					<a href="#" class="navbar-brand"><img src="./Assets/kflix_logo.png" alt="kflix/logo" class="img-fluid __logo" /></a>
+					<div class="toggler" onclick="onClick();"></div>
+					<ul class="nav">
+						<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="movies.html" class="nav-link">Movies</a></li>
+						<li class="nav-item"><a href="#topRated" class="nav-link">Favourite</a></li>
+						<li class="nav-item"><a href="#BLOG" class="nav-link">Blog</a></li>
+						<form class="d-flex search_form">
+					        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					        <a href="#" class="search__btn"><i class="fa fa-search"></i></a>
+					     </form>
+						<li class="nav-item"><a href="signin.html" class="nav-link btn-theme neon-black-box-shadow" style="background: black;">Sign In</a></li>
+						<li class="nav-item"><a href="signup.html" class="nav-link btn-theme neon-red-box-shadow" style="background: red;">Sign UP</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="row">
+				<div class="col-lg-6 col-md-10 col-sm-10 col-10 mx-auto mx-sm-auto mx-lg-0">
+					<div class="main_content">
+						<div class="btn-group">
+							<a href="#" class="btn__cap bg-warning">2021</a>
+							<a href="#" class="btn__cap bg-info">ACTION</a>
+							<a href="#" class="btn__cap bg-danger">ADVENTURE</a>
+						</div>
+						<div class="__text">
+							<h1 class="text-shadow">THE AVENGERS</h1>
+							<p>
+								When Thor's evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented threat to Earth.
+							</p>
+						</div>
+						<div class="main_btn">
+							<a href="#" class="btn-theme neon-red-box-shadow" style="background: red;"><i class="fas fa-play"></i>&nbsp;Play Trailer</a>
+							<a href="#" class="btn-theme neno-black-box-shadow" style="background: #000;"><i class="fas fa-plus"></i>&nbsp;ADD TO LIST</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-5 col-sm-8 col-10 mx-auto mx-sm-auto mx-lg-0">
+					<div class="main_content" style="align-items: center;">
+						<img src="./Assets/Avengers.jpg" alt="img/avenger" class="transition neno-black-box-shadow img-fluid __avenger" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="mian_slider">
+		<div class="container">
+			<div id="secondary-slider" class="splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<img src="./Assets/mainslide1.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide2.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide3.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide4.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide5.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide6.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide7.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide8.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide9.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide10.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide11.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide12.webp" alt="slide/1">
+						</li>
+						<li class="splide__slide">
+							<img src="./Assets/mainslide13.webp" alt="slide/1">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+	<section class="paralelax">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-10 col-sm-10 mx-md-auto mx-sm-auto col-10 mx-auto order-2 order-lg-1">
+					<div class="parlelex__text" style="text-align: center;">
+						<video src="./Assets/Mission.mp4" controls="" class="img-fluid video_container"></video>
+					</div> 
+				</div>
+				<div class="col-lg-6 col-md-10 col-sm-10 mx-md-auto mx-sm-auto col-10 mx-auto order-1 order-lg-2">
+					<div class="parlelex__text">
+						<div class="btn-group">
+							<a href="#" class="btn__cap bg-warning">2021</a>
+							<a href="#" class="btn__cap bg-info">ACTION</a>
+							<a href="#" class="btn__cap bg-danger">ADVENTURE</a>
+						</div>
+						<div class="__textBox">
+							<h1>MISSION : IMPOSSIBLE</h1>
+							<p>
+								Ethan Hunt and the IMF team join forces with CIA assassin August Walker to prevent a disaster of epic proportions. Arms dealer John Lark and a group of terrorists known as the Apostles plan to use three plutonium cores for a simultaneous nuclear attack on the Vatican. Jerusalem and Mecca, Saudi Arabia. When the weapons go missing, Ethan and his crew find themselves in a desperate race against time to prevent them from falling into the wrong hands.
+							</p>
+							<div class="main_btn">
+								<a href="#" class="btn-theme neon-red-box-shadow" style="background: red;"><i class="fas fa-play"></i>&nbsp;Play Trailer</a>
+								<a href="#" class="btn-theme neno-black-box-shadow" style="background: #000;"><i class="fas fa-plus"></i>&nbsp;ADD TO LIST</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+	<div class="advertisement">
+		<div class="container">
+			<div class="add_img">
+				<img src="./Assets/Addvertise.jpg" class="img-fluid">
+			</div>
+		</div>
+	</div>
+
+	<section class="filter pt-5 pb-5">
+		<div class="container">
+			<div class="trending-title mb-3 text-center">
+				<h1>Trending Now</h1>
+				<hr id="HR">
+			</div>
+			<div class="input-group-btn mb-4">
+				<ul class="nav justify-content-center">
+					<li><a href="#" type="button" name="filter" class="btn-filter active" data-filter="*">Show All</a></li>
+					<li><a href="#" type="button" name="filter" class="btn-filter" data-filter=".Adventure">Adventure</a></li>
+					<li><a href="#" type="button" name="filter" class="btn-filter" data-filter=".Action">Action</a></li>
+					<li><a href="#" type="button" name="filter" class="btn-filter" data-filter=".Animation">Animation</a></li>
+					<li><a href="#" type="button" name="filter" class="btn-filter" data-filter=".Netflix">Netflix</a></li>
+					<li><a href="#" type="button" name="filter" class="btn-filter" data-filter=".Comedy">Comedy</a></li>
+					<li><a href="#" type="button" name="filter" class="btn-filter" data-filter=".Documentry">Documentry</a></li>
+					<li><a href="#" type="button" name="filter" class="btn-filter" data-filter=".Drama">Drama</a></li>
+				</ul>
+			</div>
+			<div class="row gy-2 grid">
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Adventure" data-category="Adventure">
+					<img class="img-fluid" src="./Assets/adven1.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Adventure" data-category="Adventure">
+					<img class="img-fluid" src="./Assets/adven5.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Adventure" data-category="Adventure">
+					<img class="img-fluid" src="./Assets/adven3.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Action" data-category="Action">
+					<img class="img-fluid" src="./Assets/action1.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Action" data-category="Action">
+					<img class="img-fluid" src="./Assets/action3.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Action" data-category="Action">
+					<img class="img-fluid" src="./Assets/action4.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Animation" data-category="Animation">
+					<img class="img-fluid" src="./Assets/animate1.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Animation" data-category="Animation">
+					<img class="img-fluid" src="./Assets/animate2.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Animation" data-category="Animation">
+					<img class="img-fluid" src="./Assets/animate3.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Comedy" data-category="Comedy">
+					<img class="img-fluid" src="./Assets/animate4.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Comedy" data-category="Comedy">
+					<img class="img-fluid" src="./Assets/animate5.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Comedy" data-category="Comedy">
+					<img class="img-fluid" src="./Assets/animate6.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Drama" data-category="Drama">
+					<img class="img-fluid" src="./Assets/docmen1.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Drama" data-category="Drama">
+					<img class="img-fluid" src="./Assets/animate6.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Drama" data-category="Drama">
+					<img class="img-fluid" src="./Assets/animate3.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Documentry" data-category="Documentry">
+					<img class="img-fluid" src="./Assets/docmen1.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Documentry" data-category="Documentry">
+					<img class="img-fluid" src="./Assets/docmen2.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Documentry" data-category="Documentry">
+					<img class="img-fluid" src="./Assets/docmen3.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Netflix" data-category="Netflix">
+					<img class="img-fluid" src="./Assets/Netflix1.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Netflix" data-category="Netflix">
+					<img class="img-fluid" src="./Assets/Netflix2.jpg">
+				</div>
+				<div class="grid-item col-lg-2 col-md-3 col-sm-3 col-4 mx-lg-0 mx-md-auto mx-sm-auto mx-auto Netflix" data-category="Netflix">
+					<img class="img-fluid" src="./Assets/Netflix3.jpg">
+				</div>
+			</div>
+			<div class="btn-group btn-loadmore">
+				<a href="#" class="btn-theme load neon-red-box-shadow"> + Load MOre</a>
+			</div>
+		</div>
+	</section>
+	<section class="siwper_slider pt-5 pb-5 enjoy" id="topRated">
+		<div class="container">
+			<div class="trending-title mb-5 text-center">
+				<h1 class="text-white">Top Rated</h1>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" id="swipe-img1"></div>
+					<div class="swiper-slide" id="swipe-img2"></div>
+					<div class="swiper-slide" id="swipe-img3"></div>
+					<div class="swiper-slide" id="swipe-img4"></div>
+					<div class="swiper-slide" id="swipe-img5"></div>
+					<div class="swiper-slide" id="swipe-img6"></div>
+					<div class="swiper-slide" id="swipe-img7"></div>
+					<div class="swiper-slide" id="swipe-img8"></div>
+					<div class="swiper-slide" id="swipe-img9"></div>
+					<div class="swiper-slide" id="swipe-img10"></dsiv>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="enjoy pb-5 pt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-md-10 col-sm-10 col-10 mx-md-auto mx-sm-auto mx-auto">
+					<div class="__Tv-text">
+						<h1>Download your shows to watch offline.</h1>
+						<h3>Save your favorites easily and always have something to watch.</h3>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-10 col-sm-10 col-10 mx-md-auto mx-sm-auto mx-auto">
+					<div class="__Tv_content">
+						<img src="./Assets/TV-animate.png" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="enjoy pb-5 pt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-10 col-sm-10 col-10 mx-md-auto mx-sm-auto mx-auto order-2 order-lg-1">
+					<div class="__Tv_content">
+						<img src="./Assets/mobile-0819.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-10 col-sm-10 col-10 mx-md-auto mx-sm-auto mx-auto order-1 order-lg-2">
+					<div class="__Tv-text">
+						<h1>Enjoy on your TV.</h1>
+						<h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pb-5 pt-5 enjoy" id="BLOG">
+		<div class="container">
+			<div class="row text-white">
+				<div class="col-lg-4 col-md-10 col-sm-10 col-10 mx-lg-0 mx-md-auto mx-sm-auto mx-auto order-2 order-lg-1">
+					<div class="admovie">
+						<img src="./Assets/admovie.jpg" align="moive/box" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-10 col-sm-10 col-10 mx-lg-0 mx-md-auto mx-sm-auto mx-auto order-1 order-lg-2" style="border-left: 1px solid #fff;">
+					<div class="admovie">
+						<h1>THE HUNGER GAMES : CATCHING FIRE</h1>
+						<p>
+							After arriving safely home from their unprecedented victory in the 74th Annual Hunger Games, Katniss Everdeen (Jennifer Lawrence) and Peeta Mellark (Josh Hutcherson) discover that they must do a quick turnaround and begin a Victors Tour. As she and Peeta travel throughout the districts, Katniss senses a rebellion is stirring. 
+						</p>
+						<p>
+							However, President Snow (Donald Sutherland) proves that he is still very much in control when word comes of a cruel change in the rules for the upcoming 75th Hunger Games.
+						</p>
+						<a href="#" class="btn-link text-primary">Continue Reading ></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-10 col-sm-10 col-10 mx-lg-0 mx-md-auto mx-sm-auto mx-auto order-2 order-lg-2" style="border-left: 1px solid #fff;">
+					<div class="aduser">
+						<div class="ad_box">
+							<div class="img_ad">
+								<img src="./Assets/ad1.jpg" alt="ad/box" class="img-fluid">
+							</div>
+							<div class="text_ad">
+								<h5>How much cost to do a movie like Hunger Games.</h5>
+								<a href="#" class="btn-link text-danger">Learn More</a>
+							</div>
+						</div>
+						<div class="ad_box">
+							<div class="img_ad">
+								<img src="./Assets/ad2.jpg" alt="ad/box" class="img-fluid">
+							</div>
+							<div class="text_ad">
+								<h5>How Jennifer Lawrence live his life.</h5>
+								<a href="#" class="btn-link text-danger">Learn More</a>
+							</div>
+						</div>
+						<div class="ad_box">
+							<div class="img_ad">
+								<img src="./Assets/ad3.jpg" alt="ad/box" class="img-fluid">
+							</div>
+							<div class="text_ad">
+								<h5>What's happedend in the first part of the movie.</h5>
+								<a href="#" class="btn-link text-danger">Learn More</a>
+							</div>
+						</div>
+						<div class="ad_box">
+							<div class="img_ad">
+								<img src="./Assets/ad4.jpg" alt="ad/box" class="img-fluid">
+							</div>
+							<div class="text_ad">
+								<h5>See What actors do during the movie in backstage.</h5>
+								<a href="#" class="btn-link text-danger">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="enjoy pb-5 pt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-md-10 col-sm-10 col-10 mx-md-auto mx-sm-auto mx-auto">
+					<div class="__Tv-text">
+						<h1 class="font-weight-bolder">Watch everywhere in the World.</h1>
+						<h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h3>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-10 col-sm-10 col-10 mx-md-auto mx-sm-auto mx-auto">
+					<div class="__Tv_content">
+						<img src="./Assets/device-pile-socnic.png" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="Q-A pt-5 pb-5 enjoy">
+		<div class="container">
+			<div class="q-a_title text-center">
+				<h1>Frequently Ask Questions</h1>
+			</div>
+			<div class="col-lg-8 col-md-10 col-sm-10 col-10 mx-lg-auto mx-md-auto mx-sm-auto mx-auto">
+				<div class="collapsing_grid text-white">
+					<div class="collapse-item">
+						<button type="button" class="collapse-button">What is Kflix ?</button>
+						<div class="collapse-content">
+							<p>
+								Kflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+							</p>
+							<p>
+								You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+							</p>
+						</div>
+					</div>
+					<div class="collapse-item">
+						<button type="button" class="collapse-button">How much does Kflix cost?</button>
+						<div class="collapse-content">
+							<p>
+								Watch Kflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from Rs950 to Rs1,500 a month. No extra costs, no contracts.
+							</p>
+						</div>
+					</div>
+					<div class="collapse-item">
+						<button type="button" class="collapse-button">Where can I watch?</button>
+						<div class="collapse-content">
+							<p>
+								Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Kflix account to watch instantly on the web at Kflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+							</p>
+						</div>
+					</div>
+					<div class="collapse-item">
+						<button type="button" class="collapse-button">How does I cancel?</button>
+						<div class="collapse-content">
+							<p>
+								Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+							</p>
+						</div>
+					</div>
+					<div class="collapse-item">
+						<button type="button" class="collapse-button">What can I watch on Kflix?</button>
+						<div class="collapse-content">
+							<p>
+								Kflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Kflix originals, and more. Watch as much as you want, anytime you want.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="from_newslatter pt-5 pb-5 enjoy">
+		<div class="container">
+			<div class="col-lg-7 col-md-10 col-sm-10 col-10 mx-lg-auto mx-md-auto mx-sm-auto mx-auto">
+				<h5 class="text-white text-center pb-2">Ready to watch? Enter your email to create or restart your membership.</h5>
+				<form class="d-flex newform">
+					<input class="form-control me-2" type="email" placeholder="Email Adress" aria-label="Email" required="">
+					<button class="btn-form w-50" type="submit">Get Started ></button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="kflix_footer">
+		<div class="container footer-container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-6 mx-lg-auto mx-md-auto mx-sm-auto mx-auto">
+					<div class="footer-nav">
+						<ul>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Investor Relation</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Speed Test</a></li>
+							<li><a href="#">Kflix Pakistan</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-6 mx-lg-auto mx-md-auto mx-sm-auto mx-auto">
+					<div class="footer-nav">
+						<ul>
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">Cookie Preference</a></li>
+							<li><a href="#">Legal Notices</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-6 mx-lg-auto mx-md-auto mx-sm-auto mx-auto">
+					<div class="footer-nav">
+						<ul>
+							<li><a href="#">Account</a></li>
+							<li><a href="#">Ways to Watch</a></li>
+							<li><a href="#">Corporate Information</a></li>
+							<li><a href="#">KFlix Originals</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-6 mx-lg-auto mx-md-auto mx-sm-auto mx-auto">
+					<div class="footer-nav">
+						<ul>
+							<li><a href="#">Media Center</a></li>
+							<li><a href="#">Terms of USe</a></li>
+							<li><a href="#">Contact US</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="copyright text-center pb-2">
+		<p class="text-white">
+			&copy;&nbsp;Copyright <span style="color: #f23023;">KFLIX</span> All reserved rights 2021 | Terms & Conditions
+		</p>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<!-- Splide-Slider -->
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<!-- jquery-3.5.1 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<!-- Isotopes -->
+	<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+	<!-- Swiper JS -->
+  	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- Index-Js -->
+	<script type="text/javascript" src="./index.js"></script>
+	<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+		  effect: 'coverflow',
+		  grabCursor: true,
+		  centeredSlides: true,
+		  slidesPerView: 'auto',
+		  loop: true,
+	      freeMode: true,
+	      loopedSlides: 5,
+		  coverflowEffect: {
+		    rotate: 25,
+		    stretch: 0,
+		    depth: 100,
+		    modifier: 1,
+		    slideShadows: true,
+		  },
+		  autoplay: {
+	        delay: 1000,
+	        disableOnInteraction: false,
+	      },
+		});
+	</script>
+
+</body>
+</html>

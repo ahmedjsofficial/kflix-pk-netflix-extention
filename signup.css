@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fredoka+One&family=Philosopher:wght@400;700&family=Ubuntu:wght@300;400;500&display=swap');
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Ubuntu', sans-serif;
+}
+a{
+	text-decoration: none !important;
+}
+body{
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./Assets/banner2.jpg)center/cover no-repeat;	
+}
+.navbar{
+	height: 100px !important;
+}
+.btn-theme{
+	color: #fff;
+	font-size: 1.3rem;
+	padding: 10px 23px;
+	margin-right: 35px;
+	text-decoration: none;
+	display: inline-block;
+	background: red;
+	filter: drop-shadow(0.1rem 0.1rem 1rem rgba(255,16,0,0.5));	
+	box-shadow: 0.1rem 0.1rem 1rem rgba(255,16,0,0.5),-0.1rem -0.1rem 1rem rgba(255,16,0,0.7);
+}
+.btn-theme:hover{
+	color: #ccc;
+}
+.signup-form{
+	display: flex !important;
+}
+.signup{
+	display: flex;
+	min-height: 75vh;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+/*signup-form*/
+.signup-form .form-control{
+	width: 100%;
+	display: block;
+	border: none !important;
+	color: #f23023 !important;
+	transition: none !important;
+	padding: 1.1rem 1rem !important;
+	border-radius: 0.2rem 0rem 0rem 0.2rem !important;
+}
+.signup-form .form-control:focus{
+	color: #f23023 !important;
+	box-shadow: none !important;
+	border-color: none !important;
+}
+.signup-form .btn-form{
+	border: none !important;
+	outline: none !important;
+	background: red;
+	width: 45%;
+	color: #ffffff;
+	font-size: 1.5rem;
+	filter: drop-shadow(0.1rem 0.1rem 1rem rgba(255,16,0,0.3));
+}
+@media screen and (max-width : 767px){
+	.signup-form .btn-form{
+		font-size: 1.2rem;
+	}
+	.__text h1{
+		font-size: 1.7rem;	
+	}	
+	.__text h5{
+		font-size: 0.9rem;
+	}
+}
+@media screen and (max-width : 500px){
+	.signup-form{
+		display: block !important;
+	}
+	.signup-form .form-control{
+		padding: 0.87rem 1rem !important;
+	}
+	.signup-form .btn-form{
+		width: 100%;
+		margin-top: 2vh;
+		padding: 0.87rem 1rem !important;
+	}
+	.__text h1{
+		font-size: 1.4rem;	
+	}	
+	.__text h2{
+		font-size: 1.4rem;	
+	}	
+	.__text h5{
+		font-size: 0.7rem;
+	}
+}
+@media screen and (min-width : 280px) and (max-width : 375px){
+	.navbar .__logo{
+		width: 75px;
+	}
+	.navbar .btn-theme{
+		font-size: 0.9rem;
+		padding: 0.5rem;
+	}
+	.signup-form .form-control{
+		padding: 1rem !important;
+	}
+	.__text h1{
+		font-size: 1rem;	
+	}	
+	.__text h2{
+		font-size: 1rem;	
+	}	
+	.__text h5{
+		font-size: 0.85rem;
+	}
+}
